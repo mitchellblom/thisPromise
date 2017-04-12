@@ -1,10 +1,10 @@
-$(document).ready(function(){
-	$("#my-button").click(function(e){
-		console.log("event: ", e);
-		console.log("event target: ", e.target);
-		console.log("this: ", $(this));
-	});
-});
+// $(document).ready(function(){
+// 	$("#my-button").click(function(e){
+// 		console.log("event: ", e);
+// 		console.log("event target: ", e.target);
+// 		console.log("this: ", $(this));
+// 	});
+// });
 
 //Example 0:
 
@@ -75,43 +75,43 @@ $(document).ready(function(){
 /////////////////////////////////////////////////////////
 //Example 4:
 
-function foo(){
-	console.log("this", this); // obj
-	console.log("a", this.a); // 2
-}
+// function foo(){
+// 	console.log("this", this); // obj
+// 	console.log("a", this.a); // 2
+// }
 
-var obj = {
-	a: 2,
-	monkey: foo
-};
+// var obj = {
+// 	a: 2,
+// 	monkey: foo
+// };
 
-var bar = obj.foo;
+// var bar = obj.foo;
 
-var a = "global warming";
+// var a = "global warming";
 
-obj.foo(); // obj, 2
+// obj.foo(); // obj, 2
 
-bar(); // window, global warming (when console loggin 79 and 80)
+// bar(); // window, global warming (when console loggin 79 and 80)
 
 /////////////////////////////////////////////////////////
 //Example 5:
 
-function foo(){
-	console.log("this", this); // obj
-	console.log("a", this.a); // 2
-}
+// function foo(){
+// 	console.log("this", this); // obj
+// 	console.log("a", this.a); // 2
+// }
 
 
-function doFoo(fn){
-	return fn();
-}
+// function doFoo(fn){
+// 	return fn();
+// }
 
-var obj = {
-	a: 2,
-	monkey: foo
-};
+// var obj = {
+// 	a: 2,
+// 	monkey: foo
+// };
 
-var a = "global";
+// var a = "global";
 
-doFoo(obj.foo);
+// doFoo(obj.foo);
 
